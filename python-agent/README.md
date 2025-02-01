@@ -8,29 +8,13 @@ The Python Agent is responsible for handling the backend logic of our mobile lea
 
 ## Setup Instructions
 
-1. **Configure Virtual Environment Location**
-
-   First, configure Poetry to create the virtual environment within your project directory:
-
-   ```bash
-   poetry config virtualenvs.in-project true
-   ```
-
-2. **Install Dependencies**
+### **Install Dependencies**
 
    Install project dependencies (this will automatically create the `.venv` directory):
 
    ```bash
    poetry install
    ```
-
-## Running the Agent
-
-Once the dependencies are installed and the virtual environment is active, you can run the agent with the following command:
-
-```bash
-python agent/main.py
-```
 
 This will execute the main script located at `agent/main.py`, which contains example functionality.
 
@@ -49,7 +33,7 @@ This will execute the main script located at `agent/main.py`, which contains exa
 
 1. **Build the Docker Image**
    ```bash
-   langgraph build -t python-agent-image
+   poetry run langgraph build -t python-agent-image
    ```
 
 2. **Configure Environment**
@@ -63,7 +47,7 @@ This will execute the main script located at `agent/main.py`, which contains exa
 
 3. **Run the Container**
    ```bash
-   docker compose up -d
+   docker compose up
    ```
 
 4. **Once running, we can access the deployment through**

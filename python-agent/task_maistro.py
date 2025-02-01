@@ -10,6 +10,9 @@ from typing import Literal, Optional, TypedDict
 from langchain_core.runnables import RunnableConfig
 from langchain_core.messages import merge_message_runs
 from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_community.tools import WikipediaQueryRun
+from langchain_community.tools.tavily_search import TavilySearchResults
+from langchain_community.utilities import WikipediaAPIWrapper
 
 from langchain_openai import ChatOpenAI
 
@@ -17,6 +20,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import StateGraph, MessagesState, START, END
 from langgraph.store.base import BaseStore
 from langgraph.store.memory import InMemoryStore
+
 
 import configuration
 

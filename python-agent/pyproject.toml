@@ -12,7 +12,10 @@ dependencies = [
     "langchain-core (>=0.3.33,<0.4.0)",
     "langchain-community (>=0.3.16,<0.4.0)",
     "langchain-openai (>=0.3.3,<0.4.0)",
-    "trustcall (>=0.0.34,<0.0.35)"
+    "trustcall (>=0.0.34,<0.0.35)",
+    "langgraph-cli (>=0.1.70,<0.2.0)",
+    "wikipedia (>=1.4.0,<2.0.0)",
+    "tavily-python (>=0.5.0,<0.6.0)"
 ]
 
 
